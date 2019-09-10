@@ -6,7 +6,7 @@ Created on Mon Oct  1 15:31:25 2018
 @author: Tobias Schwedes
 
 Script to implement the sampling from a standard Normal Gaussian target
-using the multiple proposal algorithm introduced in Calderhead (2014).
+using the multiple proposal algorithm introduced in Yang (2018).
 Proposals are generated according to a random walk Gaussian kernel.
 """
 
@@ -20,7 +20,7 @@ class Sampling_Yang:
     
         """
         Implements sampling from a standard Normal Gaussian target
-	    using the multiple proposal algorithm introduced in Calderhead (2014).
+	    using the multiple proposal algorithm introduced in Yang (2018).
     
         Inputs:
         -------   
