@@ -95,6 +95,7 @@ class Sampling_Calderhead:
 
             # Compute weights
             LogPstates = LogTargets + LogKs
+            # https://en.wikipedia.org/wiki/List_of_logarithmic_identities, summation/subtraction
             Sorted_LogPstates = np.sort(LogPstates)
             LogPstates = LogPstates - (Sorted_LogPstates[0] + \
                     np.log(1 + np.sum(np.exp(Sorted_LogPstates[1:] - Sorted_LogPstates[0]))))
